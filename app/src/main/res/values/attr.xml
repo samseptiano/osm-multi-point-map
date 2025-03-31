@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <declare-styleable name="CustomMapView">
+            <attr name="zoomLevel" format="float" />
+            <attr name="setPinPointCenter" format="boolean" />
+            <attr name="setMultiTouchControl" format="boolean" />
+            <attr name="showRefreshButton" format="boolean" />
+            <attr name="zoomControlVisibility" format="enum">
+                <enum name="never" value="0" />
+                <enum name="showAndFadeOut" value="1" />
+                <enum name="always" value="2" />
+            </attr>
+            <attr name="tileSource" format="enum">
+                <enum name="mapnik" value="0" />
+                <enum name="usgs" value="1" />
+                <enum name="openTopo" value="2" />
+                <enum name="hikeBike" value="3" />
+            </attr>
+        </declare-styleable>
+</resources>
