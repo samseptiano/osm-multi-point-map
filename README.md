@@ -21,6 +21,18 @@ add in your XML file
         app:setMultiTouchControl="true"
         app:showRefreshButton="true"/>
 
+ add in your Java/Kotlin file:
+
+ 	val customMapView = findViewById<CustomMapView>(R.id.map)
+
+ 	//list of pinpoints
+	customMapView.listGeoPoint = listOf(
+            GeoPointData(GeoPoint(40.758896, -73.985130), "Times Square, NY", 200.0, true), // Times Square
+            GeoPointData(GeoPoint(40.748817, -73.985428), "Empire State Building, NY"), // Empire State Building
+	)
+
+	customMapView.showMap()
+
         
 Properties:
 Attribute | Type | Values
