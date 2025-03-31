@@ -1,5 +1,3 @@
-import java.util.Properties
-import java.io.FileInputStream
 
 plugins {
     alias(libs.plugins.android.library)
@@ -8,9 +6,6 @@ plugins {
 
 }
 
-val githubProperties = Properties().apply {
-    load(FileInputStream(rootProject.file("github.properties")))
-}
 afterEvaluate {
     publishing {
         publications {
@@ -19,16 +14,6 @@ afterEvaluate {
                 groupId = "com.samuelseptiano.multipointmap" // Replace with your GitHub username or organization
                 artifactId = "osm-multipointmap" // Replace with your library's name
                 version = "1.0.0" // Specify your library's version
-            }
-        }
-        repositories {
-            maven {
-                name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/samseptiano/osm-multi-point-map")
-                credentials {
-                    username = githubProperties["gpr.usr"] as String? ?: System.getenv("GPR_USER")
-                    password = githubProperties["gpr.key"] as String? ?: System.getenv("GPR_API_KEY")
-                }
             }
         }
     }
