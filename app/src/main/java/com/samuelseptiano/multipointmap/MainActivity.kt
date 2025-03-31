@@ -3,7 +3,6 @@ package com.samuelseptiano.multipointmap
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.samuelseptiano.multipointmap.R
 import org.osmdroid.util.GeoPoint
 
 class MainActivity : AppCompatActivity() {

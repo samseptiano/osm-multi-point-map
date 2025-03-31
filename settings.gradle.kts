@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Multi Point Map"
 include(":app")
- 
+include(":MultiPointMap")

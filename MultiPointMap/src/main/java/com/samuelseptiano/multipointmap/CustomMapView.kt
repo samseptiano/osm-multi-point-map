@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.ImageView
-import com.samuelseptiano.multipointmap.R
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.CustomZoomButtonsController
