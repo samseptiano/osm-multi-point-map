@@ -6,7 +6,7 @@ OSM based map to display multi pinpoint
 add in your build.gradle
 
 	dependencies {
-	        implementation 'com.github.samseptiano:osm-multi-point-map:1.0.1'
+	        implementation 'com.github.samseptiano:osm-multi-point-map:TAG'
 	}
  
 add in your XML file
